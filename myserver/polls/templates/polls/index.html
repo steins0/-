@@ -1,0 +1,1699 @@
+<!DOCTYPE html>
+<html lang="zxx">
+{% load static %}
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Directing Template">
+    <meta name="keywords" content="Directing, unica, creative, html">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script type="text/javascript" src="{% static 'js/onestar.js' %}"></script>
+    <title>Directing | Template</title>
+    
+
+    <!-- Css Styles -->
+    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}" type="text/css">
+    <link rel="stylesheet" href="{% static 'css/font-awesome.min.css' %}" type="text/css">
+    <link rel="stylesheet" href="{% static 'css/elegant-icons.css' %}" type="text/css">
+    <link rel="stylesheet" href="{% static 'css/flaticon.css' %}" type="text/css">
+    <link rel="stylesheet" href="{% static 'css/nice-select.css' %}" type="text/css">
+    <link rel="stylesheet" href="{% static 'css/barfiller.css' %}" type="text/css">
+    <link rel="stylesheet" href="{% static 'css/magnific-popup.css' %}" type="text/css">
+    <link rel="stylesheet" href="{% static 'css/jquery-ui.min.css' %}" type="text/css">
+    <link rel="stylesheet" href="{% static 'css/owl.carousel.min.css' %}" type="text/css"> 
+    <link rel="stylesheet" href="{% static 'css/slicknav.min.css' %}" type="text/css">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}" type="text/css">
+</head>
+
+<body>
+    <!-- Page Preloder -->
+    <!-- Page Preloder -->
+    <div id="preloder">
+        <div class="loader"></div>
+    </div>
+
+    <!-- Header Section Begin -->
+    <header class="header">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-3 col-md-3">
+                </div>
+                <div class="col-lg-9 col-md-9">
+                    <div class="header__nav">
+                        <nav class="header__menu mobile-menu">
+                            <ul>
+                                <li><a href="javascript:void(0);" onclick="home()">Home</a></li>
+                            </ul>
+                        </nav>
+                        <div class="header__menu__right">
+                            <a href="#" class="login-btn"><i class="fa fa-user"></i></a>
+                            <p class="user_name">{{user_name}}</p>
+                            <p name="user_id" style="display:none">{{user_id}}</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="mobile-menu-wrap"></div>
+        </div>
+    </header>
+    <!-- Header Section End -->
+
+    <!-- Hero Section Begin -->
+    <section class="hero set-bg" data-setbg="{% static 'img/hero/hero-bg.jpg' %}">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="hero__text">
+                        <div class="section-title">
+                            <h2>电影评分系统</h2>
+                        </div>
+                        <ul class="hero__categories__tags">
+                            <li><a href="#tabs-1"><img src="{% static 'img/hero/cat-1.png' %}" alt=""> 高评分</a></li>
+                            <li><a href="#tabs-2"><img src="{% static 'img/hero/cat-2.png' %}" alt=""> 喜剧</a></li>
+                            <li><a href="#tabs-3"><img src="{% static 'img/hero/cat-3.png' %}" alt=""> 科幻</a></li>
+                            <li><a href="#tabs-4"><img src="{% static 'img/hero/cat-4.png' %}" alt=""> 治愈</a></li>
+                            <li><a href="#tabs-5"><img src="{% static 'img/hero/cat-5.png' %}" alt=""> 动作</a></li>
+                            <li><a href="#tabs-6"><img src="{% static 'img/hero/cat-6.png' %}" alt=""> 悬疑</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Hero Section End -->
+
+
+    <!-- Categories Section Begin -->
+    <section class="categories spad">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="section-title">
+                        <h2>正在热映的电影</h2>
+                    </div>
+                    <div class="categories__item__list">
+                        <div class="categories__item">
+                            <a href="javascript:void(0);" onclick="jumpurl(1)"><img src="{% static 'img/camera/金刚川.webp' %}" height="300" width="200" alt=""></a>
+                            <a href="javascript:void(0);" onclick="jumpurl(1)">
+                                <h5>金刚川</h5>
+                                <p id = '1' style="display:none">1</p>
+                            </a>
+                            <div class="scoremark_scores">
+                                <em class="score">6.5</em>
+                                <span class="star">
+                                    <span class="ystar" style="width:65%"></span>
+                                    <p class="one-star"></p>
+                                    <p class="two-stars"></p>
+                                    <p class="three-stars"></p>
+                                    <p class="four-stars"></p>
+                                    <p class="five-stars"></p>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="categories__item">
+                            <a href="javascript:void(0);" onclick="jumpurl(2)"><img src="{% static 'img/camera/掬水月在手.webp' %}" height="300" width="200" alt=""></a>
+                            <a href="javascript:void(0);" onclick="jumpurl(2)">
+                                <h5>掬水月在手</h5>
+                                <p id = '2' style="display:none">2</p>
+                            </a>
+                            <div class="scoremark_scores">
+                                <em class="score">8.1</em>
+                                <span class="star">
+                                    <span class="ystar" style="width:81%">
+                                        <p class="one-star"></p>
+                                        <p class="two-stars"></p>
+                                        <p class="three-stars"></p>
+                                        <p class="four-stars"></p>
+                                        <p class="five-stars"></p>
+                                    </span>
+                                </span>
+                                <div style="left: 0px; display: none;" class="tips"></div>
+                            </div>
+                        </div>
+                        <div class="categories__item">
+                            <a href="javascript:void(0);" onclick="jumpurl(3)"><img src="{% static 'img/camera/呼吸 Dans la brume.webp' %}" height="300" width="200" alt=""></a>
+                            <a href="javascript:void(0);" onclick="jumpurl(3">
+                                <h5>呼吸 Dans la brume</h5>
+                                <p id = '3' style="display:none">3</p>
+                            </a>
+                            <div class="scoremark_scores">
+                                <em class="score">5.8</em>
+                                <span class="star">
+                                    <span class="ystar" style="width:58%"></span>
+                                    <p class="one-star"></p>
+                                    <p class="two-stars"></p>
+                                    <p class="three-stars"></p>
+                                    <p class="four-stars"></p>
+                                    <p class="five-stars"></p>
+                                </span>
+                                <div style="left: 0px; display: none;" class="tips"></div>
+                            </div>
+                        </div>
+                        <div class="categories__item">
+                            <img src="{% static 'img/camera/我和我的家乡.webp' %}" height="300" width="200" alt="">
+                            <h5>我和我的家乡</h5>
+                            <div class="scoremark_scores">
+                                <em class="score">7.3</em>
+                                <span class="star">
+                                    <span class="ystar" style="width:73%"></span>
+                                    <p class="one-star"></p>
+                                    <p class="two-stars"></p>
+                                    <p class="three-stars"></p>
+                                    <p class="four-stars"></p>
+                                    <p class="five-stars"></p>
+                                </span>
+                                <div style="left: 0px; display: none;" class="tips"></div>
+                            </div>
+                        </div>
+                        <div class="categories__item">
+                            <img src="{% static 'img/camera/喜宝.webp' %}" height="300" width="200" alt="">
+                            <h5>喜宝</h5>
+                            <div class="scoremark_scores">
+                                <em class="score">3.4</em>
+                                <span class="star">
+                                    <span class="ystar" style="width:34%"></span>
+                                    <p class="one-star"></p>
+                                    <p class="two-stars"></p>
+                                    <p class="three-stars"></p>
+                                    <p class="four-stars"></p>
+                                    <p class="five-stars"></p>
+                                </span>
+                                <div style="left: 0px; display: none;" class="tips"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Categories Section End -->
+
+    <!-- Most Search Section Begin -->
+    <section class="most-search spad">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="section-title">
+                        <h2>电影</h2>
+                        <p>Travelocity empowers travelers who are giving back on their trips in ways big and small</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="most__search__tab">
+                        <ul class="nav nav-tabs" role="tablist">
+                            <li class="nav-item">
+                                <a class="nav-link active" data-toggle="tab" href="#tabs-1" role="tab">
+                                    <span class="flaticon-039-fork"></span>
+                                    高评分
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" data-toggle="tab" href="#tabs-2" role="tab">
+                                    <span class="flaticon-030-kebab"></span>
+                                    喜剧
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" data-toggle="tab" href="#tabs-3" role="tab">
+                                    <span class="flaticon-032-food-truck"></span>
+                                    科幻
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" data-toggle="tab" href="#tabs-4" role="tab">
+                                    <span class="flaticon-017-croissant"></span>
+                                    治愈
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" data-toggle="tab" href="#tabs-5" role="tab">
+                                    <span class="flaticon-038-take-away"></span>
+                                    动作
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" data-toggle="tab" href="#tabs-6" role="tab">
+                                    <span class="flaticon-031-delivery"></span>
+                                    悬疑
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="tab-content">
+                        <div class="tab-pane active" id="tabs-1" role="tabpanel">
+                            <div class="row">
+                                <div class="col-lg-4 col-md-6">
+                                    <div class="listing__item">
+                                        <div class="listing__item__pic set-bg" data-setbg="{% static 'img/camera/我不是药神.webp' %}"
+                                            height="300" width="200">
+                                            <img src="{% static 'img/listing/list_icon-1.png' %}" alt="">
+                                            <div class="listing__item__pic__tag">Popular</div>
+                                            <div class="listing__item__pic__btns">
+                                                <a href="#"><span class="icon_zoom-in_alt"></span></a>
+                                                <a href="#"><span class="icon_heart_alt"></span></a>
+                                            </div>
+                                        </div>
+                                        <div class="listing__item__text">
+                                            <div class="listing__item__text__inside">
+                                                <h5>我不是药神</h5>
+                                                <div class="listing__item__text__rating">
+                                                    <div class="listing__item__rating__star">
+                                                        <span class="icon_star"></span>
+                                                        <span class="icon_star"></span>
+                                                        <span class="icon_star"></span>
+                                                        <span class="icon_star"></span>
+                                                        <span class="icon_star-half_alt"></span>
+                                                    </div>
+                                                    <h6>9.0</h6>
+                                                </div>
+                                                <ul>
+                                                    <li> 类型: 剧情 / 喜剧</li>
+                                                    <li> 制片国家/地区: 中国大陆</li>
+                                                </ul>
+                                            </div>
+                                            <div class="listing__item__text__info">
+                                                <div class="listing__item__text__info__left">
+                                                    <img src="{% static 'img/listing/list_small_icon-1.png' %}" alt="">
+                                                    <span>高分电影</span>
+                                                </div>
+                                                <div class="listing__item__text__info__right">打开详情页</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-md-6">
+                                    <div class="listing__item">
+                                        <div class="listing__item__pic set-bg" data-setbg="{% static 'img/camera/肖申克的救赎.webp' %}"
+                                            height="300" width="200">
+                                            <img src="{% static 'img/listing/list_icon-1.png' %}" alt="">
+                                            <div class="listing__item__pic__tag">Popular</div>
+                                            <div class="listing__item__pic__btns">
+                                                <a href="#"><span class="icon_zoom-in_alt"></span></a>
+                                                <a href="#"><span class="icon_heart_alt"></span></a>
+                                            </div>
+                                        </div>
+                                        <div class="listing__item__text">
+                                            <div class="listing__item__text__inside">
+                                                <h5>肖申克的救赎</h5>
+                                                <div class="listing__item__text__rating">
+                                                    <div class="listing__item__rating__star">
+                                                        <span class="icon_star"></span>
+                                                        <span class="icon_star"></span>
+                                                        <span class="icon_star"></span>
+                                                        <span class="icon_star"></span>
+                                                        <span class="icon_star"></span>
+                                                    </div>
+                                                    <h6>9.7</h6>
+                                                </div>
+                                                <ul>
+                                                    <li> 类型: 剧情 / 犯罪</li>
+                                                    <li> 制片国家/地区: 美国</li>
+                                                </ul>
+                                            </div>
+                                            <div class="listing__item__text__info">
+                                                <div class="listing__item__text__info__left">
+                                                    <img src="{% static 'img/listing/list_small_icon-1.png' %}" alt="">
+                                                    <span>高分电影</span>
+                                                </div>
+                                                <div class="listing__item__text__info__right">打开详情页</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-md-6">
+                                    <div class="listing__item">
+                                        <div class="listing__item__pic set-bg" data-setbg="{% static 'img/camera/哪吒之魔童降世.webp' %}"
+                                            height="300" width="200">
+                                            <img src="{% static 'img/listing/list_icon-1.png' %}" alt="">
+                                            <div class="listing__item__pic__tag">Popular</div>
+                                            <div class="listing__item__pic__btns">
+                                                <a href="#"><span class="icon_zoom-in_alt"></span></a>
+                                                <a href="#"><span class="icon_heart_alt"></span></a>
+                                            </div>
+                                        </div>
+                                        <div class="listing__item__text">
+                                            <div class="listing__item__text__inside">
+                                                <h5>哪吒之魔童降世</h5>
+                                                <div class="listing__item__text__rating">
+                                                    <div class="listing__item__rating__star">
+                                                        <span class="icon_star"></span>
+                                                        <span class="icon_star"></span>
+                                                        <span class="icon_star"></span>
+                                                        <span class="icon_star"></span>
+                                                        <span class="icon_star-half_alt"></span>
+                                                    </div>
+                                                    <h6>8.5</h6>
+                                                </div>
+                                                <ul>
+                                                    <li> 类型: 剧情 / 喜剧 / 动画 / 奇幻</li>
+                                                    <li> 制片国家/地区: 中国大陆</li>
+                                                </ul>
+                                            </div>
+                                            <div class="listing__item__text__info">
+                                                <div class="listing__item__text__info__left">
+                                                    <img src="{% static 'img/listing/list_small_icon-1.png' %}" alt="">
+                                                    <span>高分电影</span>
+                                                </div>
+                                                <div class="listing__item__text__info__right">打开详情页</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-md-6">
+                                    <div class="listing__item">
+                                        <div class="listing__item__pic set-bg" data-setbg="{% static 'img/camera/千与千寻.webp' %}"
+                                            height="300" width="200">
+                                            <img src="{% static 'img/listing/list_icon-1.png' %}" alt="">
+                                            <div class="listing__item__pic__tag">Popular</div>
+                                            <div class="listing__item__pic__btns">
+                                                <a href="#"><span class="icon_zoom-in_alt"></span></a>
+                                                <a href="#"><span class="icon_heart_alt"></span></a>
+                                            </div>
+                                        </div>
+                                        <div class="listing__item__text">
+                                            <div class="listing__item__text__inside">
+                                                <h5>千与千寻</h5>
+                                                <div class="listing__item__text__rating">
+                                                    <div class="listing__item__rating__star">
+                                                        <span class="icon_star"></span>
+                                                        <span class="icon_star"></span>
+                                                        <span class="icon_star"></span>
+                                                        <span class="icon_star"></span>
+                                                        <span class="icon_star-half_alt"></span>
+                                                    </div>
+                                                    <h6>9.4</h6>
+                                                </div>
+                                                <ul>
+                                                    <li> 类型: 剧情 / 动画 / 奇幻</li>
+                                                    <li> 制片国家/地区: 日本</li>
+                                                </ul>
+                                            </div>
+                                            <div class="listing__item__text__info">
+                                                <div class="listing__item__text__info__left">
+                                                    <img src="{% static 'img/listing/list_small_icon-1.png' %}" alt="">
+                                                    <span>高分电影</span>
+                                                </div>
+                                                <div class="listing__item__text__info__right">打开详情页</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-md-6">
+                                    <div class="listing__item">
+                                        <div class="listing__item__pic set-bg" data-setbg="{% static 'img/camera/疯狂动物城.webp' %}"
+                                            height="300" width="200">
+                                            <img src="{% static 'img/listing/list_icon-1.png' %}" alt="">
+                                            <div class="listing__item__pic__tag">Popular</div>
+                                            <div class="listing__item__pic__btns">
+                                                <a href="#"><span class="icon_zoom-in_alt"></span></a>
+                                                <a href="#"><span class="icon_heart_alt"></span></a>
+                                            </div>
+                                        </div>
+                                        <div class="listing__item__text">
+                                            <div class="listing__item__text__inside">
+                                                <h5>疯狂动物城</h5>
+                                                <div class="listing__item__text__rating">
+                                                    <div class="listing__item__rating__star">
+                                                        <span class="icon_star"></span>
+                                                        <span class="icon_star"></span>
+                                                        <span class="icon_star"></span>
+                                                        <span class="icon_star"></span>
+                                                        <span class="icon_star-half_alt"></span>
+                                                    </div>
+                                                    <h6>9.2</h6>
+                                                </div>
+                                                <ul>
+                                                    <li> 类型: 喜剧 / 动画 / 冒险</li>
+                                                    <li> 制片国家/地区: 美国</li>
+                                                </ul>
+                                            </div>
+                                            <div class="listing__item__text__info">
+                                                <div class="listing__item__text__info__left">
+                                                    <img src="{% static 'img/listing/list_small_icon-1.png' %}" alt="">
+                                                    <span>高分电影</span>
+                                                </div>
+                                                <div class="listing__item__text__info__right">打开详情页</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-md-6">
+                                    <div class="listing__item">
+                                        <div class="listing__item__pic set-bg" data-setbg="{% static 'img/camera/这个杀手不太冷.webp' %}"
+                                            height="300" width="200">
+                                            <img src="{% static 'img/listing/list_icon-1.png' %}" alt="">
+                                            <div class="listing__item__pic__tag">Popular</div>
+                                            <div class="listing__item__pic__btns">
+                                                <a href="#"><span class="icon_zoom-in_alt"></span></a>
+                                                <a href="#"><span class="icon_heart_alt"></span></a>
+                                            </div>
+                                        </div>
+                                        <div class="listing__item__text">
+                                            <div class="listing__item__text__inside">
+                                                <h5>这个杀手不太冷</h5>
+                                                <div class="listing__item__text__rating">
+                                                    <div class="listing__item__rating__star">
+                                                        <span class="icon_star"></span>
+                                                        <span class="icon_star"></span>
+                                                        <span class="icon_star"></span>
+                                                        <span class="icon_star"></span>
+                                                        <span class="icon_star-half_alt"></span>
+                                                    </div>
+                                                    <h6>9.4</h6>
+                                                </div>
+                                                <ul>
+                                                    <li> 类型: 剧情 / 动作 / 犯罪</li>
+                                                    <li> 制片国家/地区: 法国 / 美国</li>
+                                                </ul>
+                                            </div>
+                                            <div class="listing__item__text__info">
+                                                <div class="listing__item__text__info__left">
+                                                    <img src="{% static 'img/listing/list_small_icon-1.png' %}" alt="">
+                                                    <span>高分电影</span>
+                                                </div>
+                                                <div class="listing__item__text__info__right">打开详情页</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane" id="tabs-2" role="tabpanel">
+                            <div class="row">
+                                <div class="col-lg-4 col-md-6">
+                                    <div class="listing__item">
+                                        <div class="listing__item__pic set-bg" data-setbg="{% static 'img/camera/重生小确幸.webp' %}"
+                                            height="300" width="200">
+                                            <img src="{% static 'img/listing/list_icon-1.png' %}" alt="">
+                                            <div class="listing__item__pic__tag">喜剧</div>
+                                            <div class="listing__item__pic__btns">
+                                                <a href="#"><span class="icon_zoom-in_alt"></span></a>
+                                                <a href="#"><span class="icon_heart_alt"></span></a>
+                                            </div>
+                                        </div>
+                                        <div class="listing__item__text">
+                                            <div class="listing__item__text__inside">
+                                                <h5>重生小确幸</h5>
+                                                <div class="listing__item__text__rating">
+                                                    <div class="listing__item__rating__star">
+                                                        <span class="icon_star"></span>
+                                                        <span class="icon_star"></span>
+                                                        <span class="icon_star"></span>
+                                                        <span class="icon_star-half_alt"></span>
+                                                        <span class="icon_star_alt"></span>
+                                                    </div>
+                                                    <h6>6.9</h6>
+                                                </div>
+                                                <ul>
+                                                    <li> 类型: 喜剧</li>
+                                                    <li> 制片国家/地区: 意大利</li>
+                                                </ul>
+                                            </div>
+                                            <div class="listing__item__text__info">
+                                                <div class="listing__item__text__info__left">
+                                                    <img src="{% static 'img/listing/list_small_icon-1.png' %}" alt="">
+                                                    <span>喜剧</span>
+                                                </div>
+                                                <div class="listing__item__text__info__right">打开详情页</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-md-6">
+                                    <div class="listing__item">
+                                        <div class="listing__item__pic set-bg" data-setbg="{% static 'img/camera/飞驰人生.webp' %}"
+                                            height="300" width="200">
+                                            <img src="{% static 'img/listing/list_icon-1.png' %}" alt="">
+                                            <div class="listing__item__pic__tag">喜剧</div>
+                                            <div class="listing__item__pic__btns">
+                                                <a href="#"><span class="icon_zoom-in_alt"></span></a>
+                                                <a href="#"><span class="icon_heart_alt"></span></a>
+                                            </div>
+                                        </div>
+                                        <div class="listing__item__text">
+                                            <div class="listing__item__text__inside">
+                                                <h5>飞驰人生</h5>
+                                                <div class="listing__item__text__rating">
+                                                    <div class="listing__item__rating__star">
+                                                        <span class="icon_star"></span>
+                                                        <span class="icon_star"></span>
+                                                        <span class="icon_star"></span>
+                                                        <span class="icon_star-half_alt"></span>
+                                                        <span class="icon_star_alt"></span>
+                                                    </div>
+                                                    <h6>6.9</h6>
+                                                </div>
+                                                <ul>
+                                                    <li> 类型: 喜剧</li>
+                                                    <li> 制片国家/地区: 中国大陆</li>
+                                                </ul>
+                                            </div>
+                                            <div class="listing__item__text__info">
+                                                <div class="listing__item__text__info__left">
+                                                    <img src="{% static 'img/listing/list_small_icon-1.png' %}" alt="">
+                                                    <span>喜剧</span>
+                                                </div>
+                                                <div class="listing__item__text__info__right">打开详情页</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-md-6">
+                                    <div class="listing__item">
+                                        <div class="listing__item__pic set-bg" data-setbg="{% static 'img/camera/疯狂的外星人.webp' %}"
+                                            height="300" width="200">
+                                            <img src="{% static 'img/listing/list_icon-1.png' %}" alt="">
+                                            <div class="listing__item__pic__tag">喜剧</div>
+                                            <div class="listing__item__pic__btns">
+                                                <a href="#"><span class="icon_zoom-in_alt"></span></a>
+                                                <a href="#"><span class="icon_heart_alt"></span></a>
+                                            </div>
+                                        </div>
+                                        <div class="listing__item__text">
+                                            <div class="listing__item__text__inside">
+                                                <h5>疯狂的外星人</h5>
+                                                <div class="listing__item__text__rating">
+                                                    <div class="listing__item__rating__star">
+                                                        <span class="icon_star"></span>
+                                                        <span class="icon_star"></span>
+                                                        <span class="icon_star"></span>
+                                                        <span class="icon_star-half_alt"></span>
+                                                        <span class="icon_star_alt"></span>
+                                                    </div>
+                                                    <h6>6.4</h6>
+                                                </div>
+                                                <ul>
+                                                    <li> 类型: 喜剧 / 科幻</li>
+                                                    <li> 制片国家/地区: 中国大陆</li>
+                                                </ul>
+                                            </div>
+                                            <div class="listing__item__text__info">
+                                                <div class="listing__item__text__info__left">
+                                                    <img src="{% static 'img/listing/list_small_icon-1.png' %}" alt="">
+                                                    <span>喜剧</span>
+                                                </div>
+                                                <div class="listing__item__text__info__right">打开详情页</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-md-6">
+                                    <div class="listing__item">
+                                        <div class="listing__item__pic set-bg" data-setbg="{% static 'img/camera/哪吒之魔童降世.webp' %}"
+                                            height="300" width="200">
+                                            <img src="{% static 'img/listing/list_icon-1.png' %}" alt="">
+                                            <div class="listing__item__pic__tag">Popular</div>
+                                            <div class="listing__item__pic__btns">
+                                                <a href="#"><span class="icon_zoom-in_alt"></span></a>
+                                                <a href="#"><span class="icon_heart_alt"></span></a>
+                                            </div>
+                                        </div>
+                                        <div class="listing__item__text">
+                                            <div class="listing__item__text__inside">
+                                                <h5>哪吒之魔童降世</h5>
+                                                <div class="listing__item__text__rating">
+                                                    <div class="listing__item__rating__star">
+                                                        <span class="icon_star"></span>
+                                                        <span class="icon_star"></span>
+                                                        <span class="icon_star"></span>
+                                                        <span class="icon_star"></span>
+                                                        <span class="icon_star-half_alt"></span>
+                                                    </div>
+                                                    <h6>8.5</h6>
+                                                </div>
+                                                <ul>
+                                                    <li> 类型: 剧情 / 喜剧 / 动画 / 奇幻</li>
+                                                    <li> 制片国家/地区: 中国大陆</li>
+                                                </ul>
+                                            </div>
+                                            <div class="listing__item__text__info">
+                                                <div class="listing__item__text__info__left">
+                                                    <img src="{% static 'img/listing/list_small_icon-1.png' %}" alt="">
+                                                    <span>喜剧</span>
+                                                </div>
+                                                <div class="listing__item__text__info__right">打开详情页</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-md-6">
+                                    <div class="listing__item">
+                                        <div class="listing__item__pic set-bg" data-setbg="{% static 'img/camera/囧妈.webp' %}"
+                                            height="300" width="200">
+                                            <img src="{% static 'img/listing/list_icon-1.png' %}" alt="">
+                                            <div class="listing__item__pic__tag">喜剧</div>
+                                            <div class="listing__item__pic__btns">
+                                                <a href="#"><span class="icon_zoom-in_alt"></span></a>
+                                                <a href="#"><span class="icon_heart_alt"></span></a>
+                                            </div>
+                                        </div>
+                                        <div class="listing__item__text">
+                                            <div class="listing__item__text__inside">
+                                                <h5>囧妈</h5>
+                                                <div class="listing__item__text__rating">
+                                                    <div class="listing__item__rating__star">
+                                                        <span class="icon_star"></span>
+                                                        <span class="icon_star"></span>
+                                                        <span class="icon_star"></span>
+                                                        <span class="icon_star_alt"></span>
+                                                        <span class="icon_star_alt"></span>
+                                                    </div>
+                                                    <h6>5.9</h6>
+                                                </div>
+                                                <ul>
+                                                    <li> 类型: 喜剧</li>
+                                                    <li> 制片国家/地区: 中国大陆</li>
+                                                </ul>
+                                            </div>
+                                            <div class="listing__item__text__info">
+                                                <div class="listing__item__text__info__left">
+                                                    <img src="{% static 'img/listing/list_small_icon-1.png' %}" alt="">
+                                                    <span>喜剧</span>
+                                                </div>
+                                                <div class="listing__item__text__info__right">打开详情页</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-md-6">
+                                    <div class="listing__item">
+                                        <div class="listing__item__pic set-bg" data-setbg="{% static 'img/camera/半个喜剧.webp' %}"
+                                            height="300" width="200">
+                                            <img src="{% static 'img/listing/list_icon-1.png' %}" alt="">
+                                            <div class="listing__item__pic__tag">喜剧</div>
+                                            <div class="listing__item__pic__btns">
+                                                <a href="#"><span class="icon_zoom-in_alt"></span></a>
+                                                <a href="#"><span class="icon_heart_alt"></span></a>
+                                            </div>
+                                        </div>
+                                        <div class="listing__item__text">
+                                            <div class="listing__item__text__inside">
+                                                <h5>半个喜剧</h5>
+                                                <div class="listing__item__text__rating">
+                                                    <div class="listing__item__rating__star">
+                                                        <span class="icon_star"></span>
+                                                        <span class="icon_star"></span>
+                                                        <span class="icon_star"></span>
+                                                        <span class="icon_star-half_alt"></span>
+                                                        <span class="icon_star_alt"></span>
+                                                    </div>
+                                                    <h6>7.4</h6>
+                                                </div>
+                                                <ul>
+                                                    <li> 类型: 喜剧 / 爱情</li>
+                                                    <li> 制片国家/地区: 中国大陆</li>
+                                                </ul>
+                                            </div>
+                                            <div class="listing__item__text__info">
+                                                <div class="listing__item__text__info__left">
+                                                    <img src="{% static 'img/listing/list_small_icon-1.png' %}" alt="">
+                                                    <span>喜剧</span>
+                                                </div>
+                                                <div class="listing__item__text__info__right">打开详情页</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane" id="tabs-3" role="tabpanel">
+                            <div class="row">
+                                <div class="col-lg-4 col-md-6">
+                                    <div class="listing__item">
+                                        <div class="listing__item__pic set-bg" data-setbg="{% static 'img/camera/流浪地球.webp' %}"
+                                            height="300" width="200">
+                                            <img src="{% static 'img/listing/list_icon-1.png' %}" alt="">
+                                            <div class="listing__item__pic__tag">科幻</div>
+                                            <div class="listing__item__pic__btns">
+                                                <a href="#"><span class="icon_zoom-in_alt"></span></a>
+                                                <a href="#"><span class="icon_heart_alt"></span></a>
+                                            </div>
+                                        </div>
+                                        <div class="listing__item__text">
+                                            <div class="listing__item__text__inside">
+                                                <h5>流浪地球</h5>
+                                                <div class="listing__item__text__rating">
+                                                    <div class="listing__item__rating__star">
+                                                        <span class="icon_star"></span>
+                                                        <span class="icon_star"></span>
+                                                        <span class="icon_star"></span>
+                                                        <span class="icon_star"></span>
+                                                        <span class="icon_star_alt"></span>
+                                                    </div>
+                                                    <h6>7.9</h6>
+                                                </div>
+                                                <ul>
+                                                    <li> 类型: 科幻 / 冒险 / 灾难</li>
+                                                    <li> 制片国家/地区: 中国大陆</li>
+                                                </ul>
+                                            </div>
+                                            <div class="listing__item__text__info">
+                                                <div class="listing__item__text__info__left">
+                                                    <img src="{% static 'img/listing/list_small_icon-1.png' %}" alt="">
+                                                    <span>科幻</span>
+                                                </div>
+                                                <div class="listing__item__text__info__right">打开详情页</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-md-6">
+                                    <div class="listing__item">
+                                        <div class="listing__item__pic set-bg" data-setbg="{% static 'img/camera/复仇者联盟4：终局之战.webp' %}"
+                                            height="300" width="200">
+                                            <img src="{% static 'img/listing/list_icon-1.png' %}" alt="">
+                                            <div class="listing__item__pic__tag">科幻</div>
+                                            <div class="listing__item__pic__btns">
+                                                <a href="#"><span class="icon_zoom-in_alt"></span></a>
+                                                <a href="#"><span class="icon_heart_alt"></span></a>
+                                            </div>
+                                        </div>
+                                        <div class="listing__item__text">
+                                            <div class="listing__item__text__inside">
+                                                <h5>复仇者联盟4：终局之战</h5>
+                                                <div class="listing__item__text__rating">
+                                                    <div class="listing__item__rating__star">
+                                                        <span class="icon_star"></span>
+                                                        <span class="icon_star"></span>
+                                                        <span class="icon_star"></span>
+                                                        <span class="icon_star"></span>
+                                                        <span class="icon_star-half_alt"></span>
+                                                    </div>
+                                                    <h6>8.5</h6>
+                                                </div>
+                                                <ul>
+                                                    <li> 类型: 剧情 / 动作 / 科幻 / 奇幻 / 冒险</li>
+                                                    <li> 制片国家/地区: 美国</li>
+                                                </ul>
+                                            </div>
+                                            <div class="listing__item__text__info">
+                                                <div class="listing__item__text__info__left">
+                                                    <img src="{% static 'img/listing/list_small_icon-1.png' %}" alt="">
+                                                    <span>科幻</span>
+                                                </div>
+                                                <div class="listing__item__text__info__right">打开详情页</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-md-6">
+                                    <div class="listing__item">
+                                        <div class="listing__item__pic set-bg" data-setbg="{% static 'img/camera/阿丽塔：战斗天使.webp' %}"
+                                            height="300" width="200">
+                                            <img src="{% static 'img/listing/list_icon-1.png' %}" alt="">
+                                            <div class="listing__item__pic__tag">科幻</div>
+                                            <div class="listing__item__pic__btns">
+                                                <a href="#"><span class="icon_zoom-in_alt"></span></a>
+                                                <a href="#"><span class="icon_heart_alt"></span></a>
+                                            </div>
+                                        </div>
+                                        <div class="listing__item__text">
+                                            <div class="listing__item__text__inside">
+                                                <h5>阿丽塔：战斗天使</h5>
+                                                <div class="listing__item__text__rating">
+                                                    <div class="listing__item__rating__star">
+                                                        <span class="icon_star"></span>
+                                                        <span class="icon_star"></span>
+                                                        <span class="icon_star"></span>
+                                                        <span class="icon_star"></span>
+                                                        <span class="icon_star_alt"></span>
+                                                    </div>
+                                                    <h6>7.5</h6>
+                                                </div>
+                                                <ul>
+                                                    <li> 类型: 动作 / 科幻 / 冒险</li>
+                                                    <li> 制片国家/地区: 美国 / 日本 / 加拿大</li>
+                                                </ul>
+                                            </div>
+                                            <div class="listing__item__text__info">
+                                                <div class="listing__item__text__info__left">
+                                                    <img src="{% static 'img/listing/list_small_icon-1.png' %}" alt="">
+                                                    <span>科幻</span>
+                                                </div>
+                                                <div class="listing__item__text__info__right">打开详情页</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-md-6">
+                                    <div class="listing__item">
+                                        <div class="listing__item__pic set-bg" data-setbg="{% static 'img/camera/蜘蛛侠：英雄远征.webp' %}"
+                                            height="300" width="200">
+                                            <img src="{% static 'img/listing/list_icon-1.png' %}" alt="">
+                                            <div class="listing__item__pic__tag">科幻</div>
+                                            <div class="listing__item__pic__btns">
+                                                <a href="#"><span class="icon_zoom-in_alt"></span></a>
+                                                <a href="#"><span class="icon_heart_alt"></span></a>
+                                            </div>
+                                        </div>
+                                        <div class="listing__item__text">
+                                            <div class="listing__item__text__inside">
+                                                <h5>蜘蛛侠：英雄远征 </h5>
+                                                <div class="listing__item__text__rating">
+                                                    <div class="listing__item__rating__star">
+                                                        <span class="icon_star"></span>
+                                                        <span class="icon_star"></span>
+                                                        <span class="icon_star"></span>
+                                                        <span class="icon_star"></span>
+                                                        <span class="icon_star_alt"></span>
+                                                    </div>
+                                                    <h6>7.7</h6>
+                                                </div>
+                                                <ul>
+                                                    <li> 类型: 动作 / 科幻 / 冒险</li>
+                                                    <li> 制片国家/地区: 美国</li>
+                                                </ul>
+                                            </div>
+                                            <div class="listing__item__text__info">
+                                                <div class="listing__item__text__info__left">
+                                                    <img src="{% static 'img/listing/list_small_icon-1.png' %}" alt="">
+                                                    <span>科幻</span>
+                                                </div>
+                                                <div class="listing__item__text__info__right">打开详情页</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-md-6">
+                                    <div class="listing__item">
+                                        <div class="listing__item__pic set-bg" data-setbg="{% static 'img/camera/惊奇队长.webp' %}"
+                                            height="300" width="200">
+                                            <img src="{% static 'img/listing/list_icon-1.png' %}" alt="">
+                                            <div class="listing__item__pic__tag">科幻</div>
+                                            <div class="listing__item__pic__btns">
+                                                <a href="#"><span class="icon_zoom-in_alt"></span></a>
+                                                <a href="#"><span class="icon_heart_alt"></span></a>
+                                            </div>
+                                        </div>
+                                        <div class="listing__item__text">
+                                            <div class="listing__item__text__inside">
+                                                <h5>惊奇队长</h5>
+                                                <div class="listing__item__text__rating">
+                                                    <div class="listing__item__rating__star">
+                                                        <span class="icon_star"></span>
+                                                        <span class="icon_star"></span>
+                                                        <span class="icon_star"></span>
+                                                        <span class="icon_star-half_alt"></span>
+                                                        <span class="icon_star_alt"></span>
+                                                    </div>
+                                                    <h6>6.9</h6>
+                                                </div>
+                                                <ul>
+                                                    <li> 类型: 动作 / 科幻 / 冒险</li>
+                                                    <li> 制片国家/地区: 美国 / 澳大利亚</li>
+                                                </ul>
+                                            </div>
+                                            <div class="listing__item__text__info">
+                                                <div class="listing__item__text__info__left">
+                                                    <img src="{% static 'img/listing/list_small_icon-1.png' %}" alt="">
+                                                    <span>科幻</span>
+                                                </div>
+                                                <div class="listing__item__text__info__right">打开详情页</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-md-6">
+                                    <div class="listing__item">
+                                        <div class="listing__item__pic set-bg" data-setbg="{% static 'img/camera/大黄蜂.webp' %}"
+                                            height="300" width="200">
+                                            <img src="{% static 'img/listing/list_icon-1.png' %}" alt="">
+                                            <div class="listing__item__pic__tag">科幻</div>
+                                            <div class="listing__item__pic__btns">
+                                                <a href="#"><span class="icon_zoom-in_alt"></span></a>
+                                                <a href="#"><span class="icon_heart_alt"></span></a>
+                                            </div>
+                                        </div>
+                                        <div class="listing__item__text">
+                                            <div class="listing__item__text__inside">
+                                                <h5>大黄蜂</h5>
+                                                <div class="listing__item__text__rating">
+                                                    <div class="listing__item__rating__star">
+                                                        <span class="icon_star"></span>
+                                                        <span class="icon_star"></span>
+                                                        <span class="icon_star"></span>
+                                                        <span class="icon_star-half_alt"></span>
+                                                        <span class="icon_star_alt"></span>
+                                                    </div>
+                                                    <h6>7.0</h6>
+                                                </div>
+                                                <ul>
+                                                    <li> 类型: 动作 / 科幻 / 冒险</li>
+                                                    <li> 制片国家/地区: 美国 / 中国大陆</li>
+                                                </ul>
+                                            </div>
+                                            <div class="listing__item__text__info">
+                                                <div class="listing__item__text__info__left">
+                                                    <img src="{% static 'img/listing/list_small_icon-1.png' %}" alt="">
+                                                    <span>科幻</span>
+                                                </div>
+                                                <div class="listing__item__text__info__right">打开详情页</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane" id="tabs-4" role="tabpanel">
+                            <div class="row">
+                                <div class="col-lg-4 col-md-6">
+                                    <div class="listing__item">
+                                        <div class="listing__item__pic set-bg" data-setbg="{% static 'img/camera/忠犬八公的故事.webp' %}"
+                                            height="300" width="200">
+                                            <img src="{% static 'img/listing/list_icon-1.png' %}" alt="">
+                                            <div class="listing__item__pic__tag">治愈</div>
+                                            <div class="listing__item__pic__btns">
+                                                <a href="#"><span class="icon_zoom-in_alt"></span></a>
+                                                <a href="#"><span class="icon_heart_alt"></span></a>
+                                            </div>
+                                        </div>
+                                        <div class="listing__item__text">
+                                            <div class="listing__item__text__inside">
+                                                <h5>忠犬八公的故事</h5>
+                                                <div class="listing__item__text__rating">
+                                                    <div class="listing__item__rating__star">
+                                                        <span class="icon_star"></span>
+                                                        <span class="icon_star"></span>
+                                                        <span class="icon_star"></span>
+                                                        <span class="icon_star"></span>
+                                                        <span class="icon_star-half_alt"></span>
+                                                    </div>
+                                                    <h6>9.4</h6>
+                                                </div>
+                                                <ul>
+                                                    <li> 类型: 剧情</li>
+                                                    <li> 制片国家/地区: 美国 / 英国</li>
+                                                </ul>
+                                            </div>
+                                            <div class="listing__item__text__info">
+                                                <div class="listing__item__text__info__left">
+                                                    <img src="{% static 'img/listing/list_small_icon-1.png' %}" alt="">
+                                                    <span>治愈</span>
+                                                </div>
+                                                <div class="listing__item__text__info__right">打开详情页</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-md-6">
+                                    <div class="listing__item">
+                                        <div class="listing__item__pic set-bg" data-setbg="{% static 'img/camera/这个杀手不太冷.webp' %}"
+                                            height="300" width="200">
+                                            <img src="{% static 'img/listing/list_icon-1.png' %}" alt="">
+                                            <div class="listing__item__pic__tag">Popular</div>
+                                            <div class="listing__item__pic__btns">
+                                                <a href="#"><span class="icon_zoom-in_alt"></span></a>
+                                                <a href="#"><span class="icon_heart_alt"></span></a>
+                                            </div>
+                                        </div>
+                                        <div class="listing__item__text">
+                                            <div class="listing__item__text__inside">
+                                                <h5>这个杀手不太冷</h5>
+                                                <div class="listing__item__text__rating">
+                                                    <div class="listing__item__rating__star">
+                                                        <span class="icon_star"></span>
+                                                        <span class="icon_star"></span>
+                                                        <span class="icon_star"></span>
+                                                        <span class="icon_star"></span>
+                                                        <span class="icon_star-half_alt"></span>
+                                                    </div>
+                                                    <h6>9.4</h6>
+                                                </div>
+                                                <ul>
+                                                    <li> 类型: 剧情 / 动作 / 犯罪</li>
+                                                    <li> 制片国家/地区: 法国 / 美国</li>
+                                                </ul>
+                                            </div>
+                                            <div class="listing__item__text__info">
+                                                <div class="listing__item__text__info__left">
+                                                    <img src="{% static 'img/listing/list_small_icon-1.png' %}" alt="">
+                                                    <span>治愈</span>
+                                                </div>
+                                                <div class="listing__item__text__info__right">打开详情页</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-md-6">
+                                    <div class="listing__item">
+                                        <div class="listing__item__pic set-bg" data-setbg="{% static 'img/camera/担保.webp' %}"
+                                            height="300" width="200">
+                                            <img src="{% static 'img/listing/list_icon-1.png' %}" alt="">
+                                            <div class="listing__item__pic__tag">治愈</div>
+                                            <div class="listing__item__pic__btns">
+                                                <a href="#"><span class="icon_zoom-in_alt"></span></a>
+                                                <a href="#"><span class="icon_heart_alt"></span></a>
+                                            </div>
+                                        </div>
+                                        <div class="listing__item__text">
+                                            <div class="listing__item__text__inside">
+                                                <h5>担保</h5>
+                                                <div class="listing__item__text__rating">
+                                                    <div class="listing__item__rating__star">
+                                                        <span class="icon_star"></span>
+                                                        <span class="icon_star"></span>
+                                                        <span class="icon_star"></span>
+                                                        <span class="icon_star"></span>
+                                                        <span class="icon_star_alt"></span>
+                                                    </div>
+                                                    <h6>7.8</h6>
+                                                </div>
+                                                <ul>
+                                                    <li> 类型: 剧情</li>
+                                                    <li> 制片国家/地区: 韩国</li>
+                                                </ul>
+                                            </div>
+                                            <div class="listing__item__text__info">
+                                                <div class="listing__item__text__info__left">
+                                                    <img src="{% static 'img/listing/list_small_icon-1.png' %}" alt="">
+                                                    <span>治愈</span>
+                                                </div>
+                                                <div class="listing__item__text__info__right">打开详情页</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-md-6">
+                                    <div class="listing__item">
+                                        <div class="listing__item__pic set-bg" data-setbg="{% static 'img/camera/云上情歌.webp' %}"
+                                            height="300" width="200">
+                                            <img src="{% static 'img/listing/list_icon-1.png' %}" alt="">
+                                            <div class="listing__item__pic__tag">治愈</div>
+                                            <div class="listing__item__pic__btns">
+                                                <a href="#"><span class="icon_zoom-in_alt"></span></a>
+                                                <a href="#"><span class="icon_heart_alt"></span></a>
+                                            </div>
+                                        </div>
+                                        <div class="listing__item__text">
+                                            <div class="listing__item__text__inside">
+                                                <h5>云上情歌</h5>
+                                                <div class="listing__item__text__rating">
+                                                    <div class="listing__item__rating__star">
+                                                        <span class="icon_star"></span>
+                                                        <span class="icon_star"></span>
+                                                        <span class="icon_star"></span>
+                                                        <span class="icon_star"></span>
+                                                        <span class="icon_star_alt"></span>
+                                                    </div>
+                                                    <h6>7.7</h6>
+                                                </div>
+                                                <ul>
+                                                    <li> 类型: 剧情 / 音乐</li>
+                                                    <li> 制片国家/地区: 美国</li>
+                                                </ul>
+                                            </div>
+                                            <div class="listing__item__text__info">
+                                                <div class="listing__item__text__info__left">
+                                                    <img src="{% static 'img/listing/list_small_icon-1.png' %}" alt="">
+                                                    <span>治愈</span>
+                                                </div>
+                                                <div class="listing__item__text__info__right">打开详情页</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-md-6">
+                                    <div class="listing__item">
+                                        <div class="listing__item__pic set-bg" data-setbg="{% static 'img/camera/千与千寻.webp' %}"
+                                            height="300" width="200">
+                                            <img src="{% static 'img/listing/list_icon-1.png' %}" alt="">
+                                            <div class="listing__item__pic__tag">Popular</div>
+                                            <div class="listing__item__pic__btns">
+                                                <a href="#"><span class="icon_zoom-in_alt"></span></a>
+                                                <a href="#"><span class="icon_heart_alt"></span></a>
+                                            </div>
+                                        </div>
+                                        <div class="listing__item__text">
+                                            <div class="listing__item__text__inside">
+                                                <h5>千与千寻</h5>
+                                                <div class="listing__item__text__rating">
+                                                    <div class="listing__item__rating__star">
+                                                        <span class="icon_star"></span>
+                                                        <span class="icon_star"></span>
+                                                        <span class="icon_star"></span>
+                                                        <span class="icon_star"></span>
+                                                        <span class="icon_star-half_alt"></span>
+                                                    </div>
+                                                    <h6>9.4</h6>
+                                                </div>
+                                                <ul>
+                                                    <li> 类型: 剧情 / 动画 / 奇幻</li>
+                                                    <li> 制片国家/地区: 日本</li>
+                                                </ul>
+                                            </div>
+                                            <div class="listing__item__text__info">
+                                                <div class="listing__item__text__info__left">
+                                                    <img src="{% static 'img/listing/list_small_icon-1.png' %}" alt="">
+                                                    <span>治愈</span>
+                                                </div>
+                                                <div class="listing__item__text__info__right">打开详情页</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-md-6">
+                                    <div class="listing__item">
+                                        <div class="listing__item__pic set-bg" data-setbg="{% static 'img/camera/你的名字.webp' %}"
+                                            height="300" width="200">
+                                            <img src="{% static 'img/listing/list_icon-1.png' %}" alt="">
+                                            <div class="listing__item__pic__tag">治愈</div>
+                                            <div class="listing__item__pic__btns">
+                                                <a href="#"><span class="icon_zoom-in_alt"></span></a>
+                                                <a href="#"><span class="icon_heart_alt"></span></a>
+                                            </div>
+                                        </div>
+                                        <div class="listing__item__text">
+                                            <div class="listing__item__text__inside">
+                                                <h5>你的名字</h5>
+                                                <div class="listing__item__text__rating">
+                                                    <div class="listing__item__rating__star">
+                                                        <span class="icon_star"></span>
+                                                        <span class="icon_star"></span>
+                                                        <span class="icon_star"></span>
+                                                        <span class="icon_star"></span>
+                                                        <span class="icon_star_alt"></span>
+                                                    </div>
+                                                    <h6>8.4</h6>
+                                                </div>
+                                                <ul>
+                                                    <li> 类型: 剧情 / 爱情 / 动画</li>
+                                                    <li> 制片国家/地区: 日本</li>
+                                                </ul>
+                                            </div>
+                                            <div class="listing__item__text__info">
+                                                <div class="listing__item__text__info__left">
+                                                    <img src="{% static 'img/listing/list_small_icon-1.png' %}" alt="">
+                                                    <span>治愈</span>
+                                                </div>
+                                                <div class="listing__item__text__info__right">打开详情页</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane" id="tabs-5" role="tabpanel">
+                            <div class="row">
+                                <div class="col-lg-4 col-md-6">
+                                    <div class="listing__item">
+                                        <div class="listing__item__pic set-bg" data-setbg="{% static 'img/camera/海王.webp' %}"
+                                            height="300" width="200">
+                                            <img src="{% static 'img/listing/list_icon-1.png' %}" alt="">
+                                            <div class="listing__item__pic__tag">动作</div>
+                                            <div class="listing__item__pic__btns">
+                                                <a href="#"><span class="icon_zoom-in_alt"></span></a>
+                                                <a href="#"><span class="icon_heart_alt"></span></a>
+                                            </div>
+                                        </div>
+                                        <div class="listing__item__text">
+                                            <div class="listing__item__text__inside">
+                                                <h5>海王</h5>
+                                                <div class="listing__item__text__rating">
+                                                    <div class="listing__item__rating__star">
+                                                        <span class="icon_star"></span>
+                                                        <span class="icon_star"></span>
+                                                        <span class="icon_star"></span>
+                                                        <span class="icon_star"></span>
+                                                        <span class="icon_star_alt"></span>
+                                                    </div>
+                                                    <h6>7.6</h6>
+                                                </div>
+                                                <ul>
+                                                    <li> 类型: 动作 / 奇幻 / 冒险</li>
+                                                    <li> 制片国家/地区: 美国 / 澳大利亚</li>
+                                                </ul>
+                                            </div>
+                                            <div class="listing__item__text__info">
+                                                <div class="listing__item__text__info__left">
+                                                    <img src="{% static 'img/listing/list_small_icon-1.png' %}" alt="">
+                                                    <span>动作</span>
+                                                </div>
+                                                <div class="listing__item__text__info__right">打开详情页</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-md-6">
+                                    <div class="listing__item">
+                                        <div class="listing__item__pic set-bg" data-setbg="{% static 'img/camera/叶问4：完结篇.webp' %}"
+                                            height="300" width="200">
+                                            <img src="{% static 'img/listing/list_icon-1.png' %}" alt="">
+                                            <div class="listing__item__pic__tag">动作</div>
+                                            <div class="listing__item__pic__btns">
+                                                <a href="#"><span class="icon_zoom-in_alt"></span></a>
+                                                <a href="#"><span class="icon_heart_alt"></span></a>
+                                            </div>
+                                        </div>
+                                        <div class="listing__item__text">
+                                            <div class="listing__item__text__inside">
+                                                <h5>叶问4：完结篇</h5>
+                                                <div class="listing__item__text__rating">
+                                                    <div class="listing__item__rating__star">
+                                                        <span class="icon_star"></span>
+                                                        <span class="icon_star"></span>
+                                                        <span class="icon_star"></span>
+                                                        <span class="icon_star"></span>
+                                                        <span class="icon_star-half_alt"></span>
+                                                    </div>
+                                                    <h6>6.9</h6>
+                                                </div>
+                                                <ul>
+                                                    <li> 类型: 剧情 / 动作</li>
+                                                    <li> 制片国家/地区: 中国香港</li>
+                                                </ul>
+                                            </div>
+                                            <div class="listing__item__text__info">
+                                                <div class="listing__item__text__info__left">
+                                                    <img src="{% static 'img/listing/list_small_icon-1.png' %}" alt="">
+                                                    <span>动作</span>
+                                                </div>
+                                                <div class="listing__item__text__info__right">打开详情页</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-md-6">
+                                    <div class="listing__item">
+                                        <div class="listing__item__pic set-bg" data-setbg="{% static 'img/camera/恶人传.webp' %}"
+                                            height="300" width="200">
+                                            <img src="{% static 'img/listing/list_icon-1.png' %}" alt="">
+                                            <div class="listing__item__pic__tag">动作</div>
+                                            <div class="listing__item__pic__btns">
+                                                <a href="#"><span class="icon_zoom-in_alt"></span></a>
+                                                <a href="#"><span class="icon_heart_alt"></span></a>
+                                            </div>
+                                        </div>
+                                        <div class="listing__item__text">
+                                            <div class="listing__item__text__inside">
+                                                <h5>恶人传</h5>
+                                                <div class="listing__item__text__rating">
+                                                    <div class="listing__item__rating__star">
+                                                        <span class="icon_star"></span>
+                                                        <span class="icon_star"></span>
+                                                        <span class="icon_star"></span>
+                                                        <span class="icon_star"></span>
+                                                        <span class="icon_star_alt"></span>
+                                                    </div>
+                                                    <h6>7.7</h6>
+                                                </div>
+                                                <ul>
+                                                    <li> 类型: 剧情 / 动作 / 犯罪</li>
+                                                    <li> 制片国家/地区: 韩国</li>
+                                                </ul>
+                                            </div>
+                                            <div class="listing__item__text__info">
+                                                <div class="listing__item__text__info__left">
+                                                    <img src="{% static 'img/listing/list_small_icon-1.png' %}" alt="">
+                                                    <span>动作</span>
+                                                </div>
+                                                <div class="listing__item__text__info__right">打开详情页</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-md-6">
+                                    <div class="listing__item">
+                                        <div class="listing__item__pic set-bg" data-setbg="{% static 'img/camera/双子杀手.webp' %}"
+                                            height="300" width="200">
+                                            <img src="{% static 'img/listing/list_icon-1.png' %}" alt="">
+                                            <div class="listing__item__pic__tag">动作</div>
+                                            <div class="listing__item__pic__btns">
+                                                <a href="#"><span class="icon_zoom-in_alt"></span></a>
+                                                <a href="#"><span class="icon_heart_alt"></span></a>
+                                            </div>
+                                        </div>
+                                        <div class="listing__item__text">
+                                            <div class="listing__item__text__inside">
+                                                <h5>双子杀手</h5>
+                                                <div class="listing__item__text__rating">
+                                                    <div class="listing__item__rating__star">
+                                                        <span class="icon_star"></span>
+                                                        <span class="icon_star"></span>
+                                                        <span class="icon_star"></span>
+                                                        <span class="icon_star"></span>
+                                                        <span class="icon_star-half_alt"></span>
+                                                    </div>
+                                                    <h6>6.9</h6>
+                                                </div>
+                                                <ul>
+                                                    <li> 类型: 剧情 / 动作 / 科幻</li>
+                                                    <li> 制片国家/地区: 美国 / 中国大陆</li>
+                                                </ul>
+                                            </div>
+                                            <div class="listing__item__text__info">
+                                                <div class="listing__item__text__info__left">
+                                                    <img src="{% static 'img/listing/list_small_icon-1.png' %}" alt="">
+                                                    <span>动作</span>
+                                                </div>
+                                                <div class="listing__item__text__info__right">打开详情页</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-md-6">
+                                    <div class="listing__item">
+                                        <div class="listing__item__pic set-bg" data-setbg="{% static 'img/camera/速度与激情：特别行动.webp' %}"
+                                            height="300" width="200">
+                                            <img src="{% static 'img/listing/list_icon-1.png' %}" alt="">
+                                            <div class="listing__item__pic__tag">动作</div>
+                                            <div class="listing__item__pic__btns">
+                                                <a href="#"><span class="icon_zoom-in_alt"></span></a>
+                                                <a href="#"><span class="icon_heart_alt"></span></a>
+                                            </div>
+                                        </div>
+                                        <div class="listing__item__text">
+                                            <div class="listing__item__text__inside">
+                                                <h5>速度与激情：特别行动</h5>
+                                                <div class="listing__item__text__rating">
+                                                    <div class="listing__item__rating__star">
+                                                        <span class="icon_star"></span>
+                                                        <span class="icon_star"></span>
+                                                        <span class="icon_star"></span>
+                                                        <span class="icon_star_alt"></span>
+                                                        <span class="icon_star_alt"></span>
+                                                    </div>
+                                                    <h6>6.3</h6>
+                                                </div>
+                                                <ul>
+                                                    <li> 类型: 动作 / 犯罪</li>
+                                                    <li> 制片国家/地区: 美国 / 日本</li>
+                                                </ul>
+                                            </div>
+                                            <div class="listing__item__text__info">
+                                                <div class="listing__item__text__info__left">
+                                                    <img src="{% static 'img/listing/list_small_icon-1.png' %}" alt="">
+                                                    <span>动作</span>
+                                                </div>
+                                                <div class="listing__item__text__info__right">打开详情页</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-md-6">
+                                    <div class="listing__item">
+                                        <div class="listing__item__pic set-bg" data-setbg="{% static 'img/camera/扫毒2天地对决.webp' %}"
+                                            height="300" width="200">
+                                            <img src="{% static 'img/listing/list_icon-1.png' %}" alt="">
+                                            <div class="listing__item__pic__tag">动作</div>
+                                            <div class="listing__item__pic__btns">
+                                                <a href="#"><span class="icon_zoom-in_alt"></span></a>
+                                                <a href="#"><span class="icon_heart_alt"></span></a>
+                                            </div>
+                                        </div>
+                                        <div class="listing__item__text">
+                                            <div class="listing__item__text__inside">
+                                                <h5>扫毒2天地对决</h5>
+                                                <div class="listing__item__text__rating">
+                                                    <div class="listing__item__rating__star">
+                                                        <span class="icon_star"></span>
+                                                        <span class="icon_star"></span>
+                                                        <span class="icon_star"></span>
+                                                        <span class="icon_star_alt"></span>
+                                                        <span class="icon_star_alt"></span>
+                                                    </div>
+                                                    <h6>6.0</h6>
+                                                </div>
+                                                <ul>
+                                                    <li> 类型: 剧情 / 动作 / 悬疑 / 犯罪</li>
+                                                    <li> 制片国家/地区: 中国大陆 / 中国香港</li>
+                                                </ul>
+                                            </div>
+                                            <div class="listing__item__text__info">
+                                                <div class="listing__item__text__info__left">
+                                                    <img src="{% static 'img/listing/list_small_icon-1.png' %}" alt="">
+                                                    <span>动作</span>
+                                                </div>
+                                                <div class="listing__item__text__info__right">打开详情页</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane" id="tabs-6" role="tabpanel">
+                            <div class="row">
+                                <div class="col-lg-4 col-md-6">
+                                    <div class="listing__item">
+                                        <div class="listing__item__pic set-bg" data-setbg="{% static 'img/camera/犯罪现场.webp' %}"
+                                            height="300" width="200">
+                                            <img src="{% static 'img/listing/list_icon-1.png' %}" alt="">
+                                            <div class="listing__item__pic__tag">悬疑</div>
+                                            <div class="listing__item__pic__btns">
+                                                <a href="#"><span class="icon_zoom-in_alt"></span></a>
+                                                <a href="#"><span class="icon_heart_alt"></span></a>
+                                            </div>
+                                        </div>
+                                        <div class="listing__item__text">
+                                            <div class="listing__item__text__inside">
+                                                <h5>犯罪现场</h5>
+                                                <div class="listing__item__text__rating">
+                                                    <div class="listing__item__rating__star">
+                                                        <span class="icon_star"></span>
+                                                        <span class="icon_star"></span>
+                                                        <span class="icon_star"></span>
+                                                        <span class="icon_star_alt"></span>
+                                                        <span class="icon_star_alt"></span>
+                                                    </div>
+                                                    <h6>6.3</h6>
+                                                </div>
+                                                <ul>
+                                                    <li> 类型: 悬疑 / 惊悚 / 犯罪</li>
+                                                    <li> 制片国家/地区: 中国香港</li>
+                                                </ul>
+                                            </div>
+                                            <div class="listing__item__text__info">
+                                                <div class="listing__item__text__info__left">
+                                                    <img src="{% static 'img/listing/list_small_icon-1.png' %}" alt="">
+                                                    <span>悬疑</span>
+                                                </div>
+                                                <div class="listing__item__text__info__right">打开详情页</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-md-6">
+                                    <div class="listing__item">
+                                        <div class="listing__item__pic set-bg" data-setbg="{% static 'img/camera/误杀.webp' %}"
+                                            height="300" width="200">
+                                            <img src="{% static 'img/listing/list_icon-1.png' %}" alt="">
+                                            <div class="listing__item__pic__tag">悬疑</div>
+                                            <div class="listing__item__pic__btns">
+                                                <a href="#"><span class="icon_zoom-in_alt"></span></a>
+                                                <a href="#"><span class="icon_heart_alt"></span></a>
+                                            </div>
+                                        </div>
+                                        <div class="listing__item__text">
+                                            <div class="listing__item__text__inside">
+                                                <h5>误杀</h5>
+                                                <div class="listing__item__text__rating">
+                                                    <div class="listing__item__rating__star">
+                                                        <span class="icon_star"></span>
+                                                        <span class="icon_star"></span>
+                                                        <span class="icon_star"></span>
+                                                        <span class="icon_star"></span>
+                                                        <span class="icon_star_alt"></span>
+                                                    </div>
+                                                    <h6>7.7</h6>
+                                                </div>
+                                                <ul>
+                                                    <li> 类型: 剧情 / 悬疑 / 犯罪</li>
+                                                    <li> 制片国家/地区: 中国大陆</li>
+                                                </ul>
+                                            </div>
+                                            <div class="listing__item__text__info">
+                                                <div class="listing__item__text__info__left">
+                                                    <img src="{% static 'img/listing/list_small_icon-1.png' %}" alt="">
+                                                    <span>悬疑</span>
+                                                </div>
+                                                <div class="listing__item__text__info__right">打开详情页</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-md-6">
+                                    <div class="listing__item">
+                                        <div class="listing__item__pic set-bg" data-setbg="{% static 'img/camera/利刃出鞘.webp' %}"
+                                            height="300" width="200">
+                                            <img src="{% static 'img/listing/list_icon-1.png' %}" alt="">
+                                            <div class="listing__item__pic__tag">悬疑</div>
+                                            <div class="listing__item__pic__btns">
+                                                <a href="#"><span class="icon_zoom-in_alt"></span></a>
+                                                <a href="#"><span class="icon_heart_alt"></span></a>
+                                            </div>
+                                        </div>
+                                        <div class="listing__item__text">
+                                            <div class="listing__item__text__inside">
+                                                <h5>利刃出鞘</h5>
+                                                <div class="listing__item__text__rating">
+                                                    <div class="listing__item__rating__star">
+                                                        <span class="icon_star"></span>
+                                                        <span class="icon_star"></span>
+                                                        <span class="icon_star"></span>
+                                                        <span class="icon_star"></span>
+                                                        <span class="icon_star_alt"></span>
+                                                    </div>
+                                                    <h6>8.2</h6>
+                                                </div>
+                                                <ul>
+                                                    <li> 类型: 剧情 / 喜剧 / 悬疑 / 犯罪</li>
+                                                    <li> 制片国家/地区: 美国</li>
+                                                </ul>
+                                            </div>
+                                            <div class="listing__item__text__info">
+                                                <div class="listing__item__text__info__left">
+                                                    <img src="{% static 'img/listing/list_small_icon-1.png' %}" alt="">
+                                                    <span>悬疑</span>
+                                                </div>
+                                                <div class="listing__item__text__info__right">打开详情页</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-md-6">
+                                    <div class="listing__item">
+                                        <div class="listing__item__pic set-bg" data-setbg="{% static 'img/camera/海市蜃楼.webp' %}"
+                                            height="300" width="200">
+                                            <img src="{% static 'img/listing/list_icon-1.png' %}" alt="">
+                                            <div class="listing__item__pic__tag">悬疑</div>
+                                            <div class="listing__item__pic__btns">
+                                                <a href="#"><span class="icon_zoom-in_alt"></span></a>
+                                                <a href="#"><span class="icon_heart_alt"></span></a>
+                                            </div>
+                                        </div>
+                                        <div class="listing__item__text">
+                                            <div class="listing__item__text__inside">
+                                                <h5>海市蜃楼</h5>
+                                                <div class="listing__item__text__rating">
+                                                    <div class="listing__item__rating__star">
+                                                        <span class="icon_star"></span>
+                                                        <span class="icon_star"></span>
+                                                        <span class="icon_star"></span>
+                                                        <span class="icon_star"></span>
+                                                        <span class="icon_star_alt"></span>
+                                                    </div>
+                                                    <h6>7.8</h6>
+                                                </div>
+                                                <ul>
+                                                    <li> 类型: 科幻 / 悬疑 / 惊悚</li>
+                                                    <li> 制片国家/地区: 西班牙</li>
+                                                </ul>
+                                            </div>
+                                            <div class="listing__item__text__info">
+                                                <div class="listing__item__text__info__left">
+                                                    <img src="{% static 'img/listing/list_small_icon-1.png' %}" alt="">
+                                                    <span>悬疑</span>
+                                                </div>
+                                                <div class="listing__item__text__info__right">打开详情页</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-md-6">
+                                    <div class="listing__item">
+                                        <div class="listing__item__pic set-bg" data-setbg="{% static 'img/camera/密室逃生.webp' %}"
+                                            height="300" width="200">
+                                            <img src="{% static 'img/listing/list_icon-1.png' %}" alt="">
+                                            <div class="listing__item__pic__tag">悬疑</div>
+                                            <div class="listing__item__pic__btns">
+                                                <a href="#"><span class="icon_zoom-in_alt"></span></a>
+                                                <a href="#"><span class="icon_heart_alt"></span></a>
+                                            </div>
+                                        </div>
+                                        <div class="listing__item__text">
+                                            <div class="listing__item__text__inside">
+                                                <h5>密室逃生</h5>
+                                                <div class="listing__item__text__rating">
+                                                    <div class="listing__item__rating__star">
+                                                        <span class="icon_star"></span>
+                                                        <span class="icon_star"></span>
+                                                        <span class="icon_star"></span>
+                                                        <span class="icon_star-half_alt"></span>
+                                                        <span class="icon_star_alt"></span>
+                                                    </div>
+                                                    <h6>7.2</h6>
+                                                </div>
+                                                <ul>
+                                                    <li> 类型: 悬疑 / 惊悚</li>
+                                                    <li> 制片国家/地区: 美国 / 南非</li>
+                                                </ul>
+                                            </div>
+                                            <div class="listing__item__text__info">
+                                                <div class="listing__item__text__info__left">
+                                                    <img src="{% static 'img/listing/list_small_icon-1.png' %}" alt="">
+                                                    <span>悬疑</span>
+                                                </div>
+                                                <div class="listing__item__text__info__right">打开详情页</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-md-6">
+                                    <div class="listing__item">
+                                        <div class="listing__item__pic set-bg" data-setbg="{% static 'img/camera/死无对证.webp' %}"
+                                            height="300" width="200">
+                                            <img src="{% static 'img/listing/list_icon-1.png' %}" alt="">
+                                            <div class="listing__item__pic__tag">悬疑</div>
+                                            <div class="listing__item__pic__btns">
+                                                <a href="#"><span class="icon_zoom-in_alt"></span></a>
+                                                <a href="#"><span class="icon_heart_alt"></span></a>
+                                            </div>
+                                        </div>
+                                        <div class="listing__item__text">
+                                            <div class="listing__item__text__inside">
+                                                <h5>死无对证</h5>
+                                                <div class="listing__item__text__rating">
+                                                    <div class="listing__item__rating__star">
+                                                        <span class="icon_star"></span>
+                                                        <span class="icon_star"></span>
+                                                        <span class="icon_star"></span>
+                                                        <span class="icon_star"></span>
+                                                        <span class="icon_star_alt"></span>
+                                                    </div>
+                                                    <h6>7.7</h6>
+                                                </div>
+                                                <ul>
+                                                    <li> 类型: 剧情 / 悬疑 / 惊悚 / 犯罪</li>
+                                                    <li> 制片国家/地区: 意大利</li>
+                                                </ul>
+                                            </div>
+                                            <div class="listing__item__text__info">
+                                                <div class="listing__item__text__info__left">
+                                                    <img src="{% static 'img/listing/list_small_icon-1.png' %}" alt="">
+                                                    <span>悬疑</span>
+                                                </div>
+                                                <div class="listing__item__text__info__right">打开详情页</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Most Search Section End -->
+
+
+
+
+
+
+    <!-- Js Plugins -->
+    <script src="{% static 'js/jquery-3.3.1.min.js' %}"></script>
+    <script src="{% static 'js/bootstrap.min.js' %}"></script>
+    <script src="{% static 'js/jquery.nice-select.min.js' %}"></script>
+    <script src="{% static 'js/jquery-ui.min.js' %}"></script>
+    <script src="{% static 'js/jquery.nicescroll.min.js' %}"></script>
+    <script src="{% static 'js/jquery.barfiller.js' %}"></script>
+    <script src="{% static 'js/jquery.magnific-popup.min.js' %}"></script>
+    <script src="{% static 'js/jquery.slicknav.js' %}"></script>
+    <script src="{% static 'js/owl.carousel.min.js' %}"></script>
+    <script src="{% static 'js/main.js' %}"></script>
+    <script src="{% static 'js/movie.js' %}"></script>
+</body>
+
+</html>

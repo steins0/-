@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+{% load static %}
+<head>
+	<meta charset="UTF-8">
+	<title>登录</title>
+	<link rel="stylesheet" href="{% static 'css/login.css' %}" />
+	<script type="text/javascript" {% static 'src="js/login.js' %}></script>
+	<link rel="stylesheet" href="https://cdn.staticfile.org/font-awesome/4.7.0/css/font-awesome.css">
+</head>
+<body>
+<div id="login-box">
+        <h1>欢迎登录！</h1>
+               <form action="http://127.0.0.1:8000/polls/login/" method="post">
+            <div class="form">
+			<div class="item">
+				<i class="fa fa-github-alt" style="font-size:24px"></i>
+				<input type="text" id="id_username" name="username" placeholder="用户名" autofocus required />
+			</div>
+			<div class="item">
+				<i class="fa fa-search" style="font-size:24px"></i>
+				<input type="password" id="id_password" placeholder="密码" name="password" required >
+			</div>
+            <p>{{message}}</p>
+            <input type="submit" value="确定">
+		</div>
+        </form></div>
+</body>
+</html>

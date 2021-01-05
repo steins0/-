@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="zxx">
+{% load static %}
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Directing Template">
+    <meta name="keywords" content="Directing, unica, creative, html">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript" src="{% static 'js/onestar.js' %}"></script>
+    <script type="text/javascript" src="{% static 'js/home.js' %}"></script>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Directing | Template</title>
+
+    <!-- Css Styles -->
+    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}" type="text/css">
+    <link rel="stylesheet" href="{% static 'css/font-awesome.min.css' %}" type="text/css">
+    <link rel="stylesheet" href="{% static 'css/elegant-icons.css' %}" type="text/css">
+    <link rel="stylesheet" href="{% static 'css/flaticon.css' %}" type="text/css">
+    <link rel="stylesheet" href="{% static 'css/nice-select.css' %}" type="text/css">
+    <link rel="stylesheet" href="{% static 'css/barfiller.css' %}" type="text/css">
+    <link rel="stylesheet" href="{% static 'css/magnific-popup.css' %}" type="text/css">
+    <link rel="stylesheet" href="{% static 'css/jquery-ui.min.css' %}" type="text/css">
+    <link rel="stylesheet" href="{% static 'css/owl.carousel.min.css' %}" type="text/css"> 
+    <link rel="stylesheet" href="{% static 'css/slicknav.min.css' %}" type="text/css">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}" type="text/css">
+</head>
+
+<body>
+    <!-- Page Preloder -->
+    <div id="preloder">
+        <div class="loader"></div>
+    </div>
+
+    <!-- Header Section Begin -->
+    <header class="header">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-9 col-md-9">
+                    <div class="header__nav">
+                        <nav class="header__menu mobile-menu">
+                            <ul>
+                                <li><a href="javascript:void(0);" onclick="home()">Home</a></li>
+                            </ul>
+                        </nav>
+                        <div class="header__menu__right">
+                            <a href="#" class="login-btn"><i class="fa fa-user">{{user_name}}</i></a>
+                            <p name="user_id" style="display:none">{{user_id}}</p>
+                            <p name="movie_id" style="display:none">1</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="mobile-menu-wrap"></div>
+        </div>
+    </header>
+    <!-- Header Section End -->
+
+    <!-- Listing Section Begin -->
+    <section class="listing-hero set-bg" data-setbg="{% static 'img/listing/details/listing-hero.jpg' %}">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8">
+                    <div class="listing__hero__option">
+                        <div class="listing__hero__text">
+                            <h2>呼吸</h2>
+                            <div class="listing__hero__widget">
+                                <div class="listing__hero__widget__rating">
+                                    <span class="icon_star"></span>
+                                    <span class="icon_star"></span>
+                                    <span class="icon_star"></span>
+                                    <span class="icon_star_alt"></span>
+                                    <span class="icon_star_alt"></span>
+                                </div>
+                                <div>5.8</div>
+                            </div>
+                            <p>导演: 丹尼尔·罗比</p>
+                            <p>编剧: 纪尧姆·勒曼 / 吉米·贝蒙 / 马蒂厄·德洛济尔</p>
+                            <p>主演: 罗曼·杜里斯 / 欧嘉·柯瑞兰寇 / 芳汀·阿杜安 / 米歇尔·罗班 / 安娜·盖洛 </p>
+                            <p>制片国家/地区: 法国 / 加拿大</p>
+                            <p>类型: 剧情 / 科幻 / 悬疑 / 惊悚</p>
+                            <p>语言: 法语 / 英语</p>
+                            <p>上映日期: 2020-10-23(中国大陆) / 2018-04-04(法国)</p>
+                            <p>片长: 89分钟</p>
+                            <li><a href="https://www.imdb.com/title/tt5092380">IMDB链接</a></li>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Listing Section End -->
+
+    <!-- Listing Details Section Begin -->
+    <section class="listing-details spad">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8">
+                    <div class="listing__details__text">
+                        <div class="listing__details__about">
+                            <h4>剧情简介</h4>
+                            <p>当巴黎被一种奇怪的致命烟雾淹没时,幸存者只能在城市的上层和屋顶避难。没有新闻,没有电,没有水,没有食物,一个小家庭在灾难中挣扎求生。但随着时间的推移,他们不得不面对现实:救援队伍不能来了。如果他们希望活着出来,他们就得冒着被雾笼罩的危险。
+                            </p>
+                        </div>
+                        <div class="listing__details__gallery">
+                            <h4>Gallery</h4>
+                            <div class="listing__details__gallery__pic">
+                                <div class="listing__details__gallery__item">
+                                    <img class="listing__details__gallery__item__large" src="{% static 'img/camera/呼吸.webp' %}" alt="">
+                                    <span><i class="fa fa-camera"></i> Image</span>
+                                </div>
+                            </div>
+                        </div>
+                        <section class="categories spad">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-lg-12">
+                                        <div class="section-title">
+                                            <h2>职员表</h2>
+                                        </div>
+                                        <div class="categories__item__list">
+                                            <div class="categories__item">
+                                                <img src="img/actor/丹尼尔·罗比.webp" height="200" width="140" alt="">
+                                                <h6>丹尼尔·罗比 导演</h6>
+                                            </div>
+                                            <div class="categories__item">
+                                                <img src="img/actor/罗曼·杜里斯.webp" height="200" width="140" alt="">
+                                                <h6>罗曼·杜里斯 饰 Mathieu</h6>
+                                            </div>
+                                            <div class="categories__item">
+                                                <img src="img/actor/欧嘉·柯瑞兰寇.webp" height="200" width="140" alt="">
+                                                <h6>欧嘉·柯瑞兰寇 饰 Anna</h6>
+                                            </div>
+                                            <div class="categories__item">
+                                                <img src="img/actor/芳汀·阿杜安.webp" height="200" width="140" alt="">
+                                                <h6>芳汀·阿杜安 饰 Sarah</h6>
+                                            </div>
+                                            <div class="categories__item">
+                                                <img src="img/actor/米歇尔·罗班.webp" height="200" width="140" alt="">
+                                                <h6>米歇尔·罗班 饰 Lucien</h6>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                        <div class="listing__details__rating">
+                            <h4>评分</h4>
+                            <div class="listing__details__rating__overall">
+                                <h2>{{latest_movie_list.moviestar}}</h2>
+                                <div class="listing__details__rating__star">
+                                    <span class="icon_star"></span>
+                                    <span class="icon_star"></span>
+                                    <span class="icon_star"></span>
+                                    <span class="icon_star"></span>
+                                    <span class="icon_star_alt"></span>
+                                </div>
+                                <span id="count">{{latest_movie_list.people}}</span><span>人评价</span>
+                            </div>
+                            <div class="listing__details__rating__bar">
+                                <div class="listing__details__rating__bar__item">
+                                    <span>5星</span>
+                                    <div id="bar1" class="barfiller">
+                                        <span class="fill" data-percentage="3.5"></span>
+                                    </div>
+                                    <span class="right">3.5%</span>
+                                </div>
+                                <div class="listing__details__rating__bar__item">
+                                    <span>4星</span>
+                                    <div id="bar2" class="barfiller">
+                                        <span class="fill" data-percentage="14.2"></span>
+                                    </div>
+                                    <span class="right">14.2%</span>
+                                </div>
+                                <div class="listing__details__rating__bar__item">
+                                    <span>3星</span>
+                                    <div id="bar3" class="barfiller">
+                                        <span class="fill" data-percentage="56.3"></span>
+                                    </div>
+                                    <span class="right">56.3%</span>
+                                </div>
+                                <div class="listing__details__rating__bar__item">
+                                    <span>2星</span>
+                                    <div id="bar4" class="barfiller">
+                                        <span class="fill" data-percentage="22"></span>
+                                    </div>
+                                    <span class="right">22%</span>
+                                </div>
+                                <div class="listing__details__rating__bar__item">
+                                    <span>1星</span>
+                                    <div id="bar5" class="barfiller">
+                                        <span class="fill" data-percentage="4"></span>
+                                    </div>
+                                    <span class="right">4%</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="listing__details__comment">
+                            <h4>评论</h4>
+                            <div class="listing__details__comment__item">
+                                <div class="listing__details__comment__item__text">
+                                    <div class="listing__details__comment__item__rating">
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                    </div>
+                                    <span>2018-04-05</span>
+                                    <h5>耐观影-Xavier </h5>
+                                    <p>法国为数不多的灾难片，有关雾霾袭来后的应对，但是明显的是法国人没见过真正的雾霾，因此设定为雾霾只会存在于五层楼高度以下，所以上面依然是蓝天，住在低楼层的人都因此丧命，可以理解，是环境限制了你们的想象力
+                                    </p>
+                                    <ul>
+                                        <li><i class="fa fa-hand-o-up"></i> </li>
+                                        <li><i class="fa fa-share-square-o"></i> 回复</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="listing__details__comment__item">
+                                <div class="listing__details__comment__item__text">
+                                    <div class="listing__details__comment__item__rating">
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                    </div>
+                                    <span>2018-09-10</span>
+                                    <h5>张小北</h5>
+                                    <p>有点像低成本的《天赐之女》，但是最后收尾好突兀，感觉是拍到一半忽然没钱了……创意不错，可惜国内不让拍，不然我们这边真是太应景了……
+                                    </p>
+                                    <ul>
+                                        <li><i class="fa fa-hand-o-up"></i> </li>
+                                        <li><i class="fa fa-share-square-o"></i> 回复</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="listing__details__comment__item">
+                                <div class="listing__details__comment__item__text">
+                                    <div class="listing__details__comment__item__rating">
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                    </div>
+                                    <span> 2018-09-12</span>
+                                    <h5>问津</h5>
+                                    <p>科幻内容只能撑起短片，不足以撑起整部电影，快进看完提升观影体验。</p>
+                                    <ul>
+                                        <li><i class="fa fa-hand-o-up"></i> </li>
+                                        <li><i class="fa fa-share-square-o"></i> 回复</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="listing__details__review">
+                            <h4>留下你的评论</h4>
+                            <form action="#">
+                                <textarea placeholder="评论"></textarea>
+                                <button type="submit" class="site-btn">提交</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="listing__sidebar">
+                        <div class="camera__sidebar__categories">
+                            <h5>你的打分</h5>
+                            <div class="scoremark_scores">
+                            {% if id == 0 %}
+                                <span class="star">
+                                    <span class="ystar" style="width:0%"></span>
+                                    <ul>
+                                        <li><a href="javascript:void(0);" onclick="onestar(20)" data-name="很差"
+                                                class="one-star">1</a></li>
+                                        <li><a href="javascript:void(0)" onclick="onestar(40)" data-name="较差"
+                                                class="two-stars">2</a></li>
+                                        <li><a href="javascript:void(0)" onclick="onestar(60)" data-name="一般"
+                                                class="three-stars">3</a></li>
+                                        <li><a href="javascript:void(0)" onclick="onestar(80)" data-name="较好"
+                                                class="four-stars">4</a></li>
+                                        <li><a href="javascript:void(0)" onclick="onestar(100)" data-name="很好"
+                                                class="five-stars">5</a></li>
+                                    </ul>
+                                </span>
+                            {% else%}
+                                <div class="listing__item__rating__star">
+                                    {% if star == 2 %}
+                                    <span class="icon_star"></span>
+                                    <span class="icon_star_alt"></span>
+                                    <span class="icon_star_alt"></span>
+                                    <span class="icon_star_alt"></span>
+                                    <span class="icon_star_alt"></span>
+                                    {% elif star == 4 %}
+                                    <span class="icon_star"></span>
+                                    <span class="icon_star"></span>
+                                    <span class="icon_star_alt"></span>
+                                    <span class="icon_star_alt"></span>
+                                    <span class="icon_star_alt"></span>
+                                    {% elif star == 6 %}
+                                    <span class="icon_star"></span>
+                                    <span class="icon_star"></span>
+                                    <span class="icon_star"></span>
+                                    <span class="icon_star_alt"></span>
+                                    <span class="icon_star_alt"></span>
+                                    {% elif star == 8 %}
+                                    <span class="icon_star"></span>
+                                    <span class="icon_star"></span>
+                                    <span class="icon_star"></span>
+                                    <span class="icon_star"></span>
+                                    <span class="icon_star_alt"></span>
+                                    {% elif star == 10 %}
+                                    <span class="icon_star"></span>
+                                    <span class="icon_star"></span>
+                                    <span class="icon_star"></span>
+                                    <span class="icon_star"></span>
+                                    <span class="icon_star"></span>
+                                    {% endif %}
+                                </div>
+                                <h6>{{ star }}</h6>
+                            {% endif %}
+                                <div style="left: 0px; display: none;" class="tips">az</div>
+                            </div>
+                        </div>
+                        <div class="blog__sidebar__tags">
+                            <h5>Popular Tag</h5>
+                            <a href="#">灾难</a>
+                            <a href="#">法国</a>
+                            <a href="#">科幻</a>
+                            <a href="#">人性</a>
+                            <a href="#">家庭</a>
+                            <a href="#">温情</a>
+                            <a href="#">爱情</a>
+                            <a href="#">2018</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Listing Details Section End -->
+
+
+    <!-- Js Plugins -->
+    <script src="{% static 'js/jquery-3.3.1.min.js' %}"></script>
+    <script src="{% static 'js/bootstrap.min.js' %}"></script>
+    <script src="{% static 'js/jquery.nice-select.min.js' %}"></script>
+    <script src="{% static 'js/jquery-ui.min.js' %}"></script>
+    <script src="{% static 'js/jquery.nicescroll.min.js' %}"></script>
+    <script src="{% static 'js/jquery.barfiller.js' %}"></script>
+    <script src="{% static 'js/jquery.magnific-popup.min.js' %}"></script>
+    <script src="{% static 'js/jquery.slicknav.js' %}"></script>
+    <script src="{% static 'js/owl.carousel.min.js' %}"></script>
+    <script src="{% static 'js/main.js' %}"></script>
+</body>
+
+</html>
